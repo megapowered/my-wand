@@ -123,7 +123,7 @@ fi
 
 echo "Done setting up the environment."
 echo "Downloading Game Files"
-git clone --recurse-submodules https://github.com/motherfortress2/wand && cd wand
+git clone --recurse-submodules https://github.com/megapowered/my-wand && cd my-wand
 echo "Done Downloading the game files."
 sudo rm -r .env
 
@@ -138,8 +138,8 @@ WEB_HOSTNAME=$hostname
 WEB_LEGACY_PLAY=https://$hostname/old
 WEB_LEGACY_MEDIA=https://$hostname/legacy
 
-WEB_VANILLA_PLAY=https://$hostname/play
-WEB_VANILLA_MEDIA=https://$hostname/media
+WEB_VANILLA_PLAY=https://$hostname
+WEB_VANILLA_MEDIA=https://$hostname
 
 WEB_RECAPTCHA_SITE=
 WEB_RECAPTCHA_SECRET=
